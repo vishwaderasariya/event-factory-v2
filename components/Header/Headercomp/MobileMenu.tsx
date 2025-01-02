@@ -30,10 +30,10 @@ const MobileMenu = props => {
             onClick={() => closeMenu()}
             className="flex flex-col text-center space-y-2"
           >
-            <span className="text-AAsecondary text-xs font-mono">01.</span>
+            <span className="text-[#f5d14e] text-xs font-mono">01.</span>
             <span
               className="text-white font-Text2 text-sm sm:text-base
-             hover:text-AAsecondary hover:cursor-pointer duration-300"
+             hover:text-[#f5d14e] hover:cursor-pointer duration-300"
             >
               About
             </span>
@@ -47,10 +47,10 @@ const MobileMenu = props => {
             onClick={() => closeMenu()}
             className="flex flex-col text-center space-y-2"
           >
-            <span className="text-AAsecondary text-xs font-mono hover:cursor-pointer">02.</span>
+            <span className="text-[#f5d14e] text-xs font-mono hover:cursor-pointer">02.</span>
             <span
               className="text-white font-Text2 text-sm sm:text-base
-             hover:text-AAsecondary hover:cursor-pointer duration-300"
+             hover:text-[#f5d14e] hover:cursor-pointer duration-300"
             >
               Experience
             </span>
@@ -64,10 +64,10 @@ const MobileMenu = props => {
             onClick={() => closeMenu()}
             className="flex flex-col text-center space-y-2"
           >
-            <span className="text-AAsecondary text-xs font-mono">03.</span>
+            <span className="text-[#f5d14e] text-xs font-mono">03.</span>
             <span
               className="text-white font-Text2 text-sm sm:text-base
-             hover:text-AAsecondary hover:cursor-pointer duration-300"
+             hover:text-[#f5d14e] hover:cursor-pointer duration-300"
             >
               Work
             </span>
@@ -81,18 +81,18 @@ const MobileMenu = props => {
             onClick={() => closeMenu()}
             className="flex flex-col text-center space-y-2"
           >
-            <span className="text-AAsecondary text-xs font-mono">04.</span>
+            <span className="text-[#f5d14e] text-xs font-mono">04.</span>
             <span
               className="text-white font-Text2 text-sm sm:text-base
-             hover:text-AAsecondary hover:cursor-pointer duration-300"
+             hover:text-[#f5d14e] hover:cursor-pointer duration-300"
             >
               Contact
             </span>
           </Link>
           <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
             <button
-              className="rounded border font-Text2  border-AAsecondary
-           hover:bg-ResumeButtonHover py-2 sm:py-4 px-5 sm:px-10 text-xs text-AAsecondary"
+              className="rounded border font-Text2  border-[#f5d14e]
+           hover:bg-ResumeButtonHover py-2 sm:py-4 px-5 sm:px-10 text-xs text-[#f5d14e]"
             >
               Resume
             </button>

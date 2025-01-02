@@ -8,7 +8,7 @@ export default function RestartIcon() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-full h-full text-gray-400 group-hover:text-AAsecondary group-hover:rotate-180 duration-200"
+      className="w-full h-full text-gray-400 group-hover:text-[#f5d14e] group-hover:rotate-180 duration-200"
     >
       <path
         strokeLinecap="round"

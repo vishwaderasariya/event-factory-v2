@@ -25,32 +25,23 @@ export default function TrouveTavoie() {
         <div className="flex flex-col spacey-y-2">
           {/* Title */}
           <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
-          Lead Full Stack Software Engineer <span className="text-AAsecondary">@ Blockchain</span>
+          Concert Event Production: <span className="text-[#f5d14e]"> Sound, Light, Staging</span> & More
           </span>
           {/* Date */}
-          <span className="font-mono text-xs text-gray-500">Jan - Sept 2022</span>
-          <span className="font-mono text-xs text-AAsecondary hover:cursor-pointer" style={{ fontSize: "0.6rem" }}
-           // set on click to open the website
-           onClick={() => window.open("https://www.trouvetavoie.io/", "_blank")}
-          >
-            www.trouvetavoie.io
-          </span>
+          <span className="font-mono text-xs text-gray-500">Complete concert production services to create unforgettable live experiences.</span>
         </div>
         <div className="flex flex-col space-y-4 sm:text-sm text-xs">
           {/* Tasks Description 1 */}
-          {tasks.map((item, index) => {
-            return (
-              <div key={index} className="flex flex-row space-x-1">
-                <ArrowIcon className={" h-5 w-4 text-AAsecondary flex-none"} />
+              <div className="flex flex-row space-x-1">
+                <ArrowIcon className={" h-5 w-4 text-[#f5d14e] flex-none"} />
                 <span
                   className="text-gray-500 sm:text-sm text-xs"
-                  dangerouslySetInnerHTML={{
-                    __html: getTasksTextWithHighlightedKeyword(item.text, item.keywords),
-                  }}
-                ></span>
+                  // dangerouslySetInnerHTML={{
+                  //   __html: getTasksTextWithHighlightedKeyword(item.text, item.keywords),
+                  // }}
+                >From sound and lighting to staging and technical support, we provide full-service concert production tailored to every need. Our team handles everything—transportation, artist and team accommodations, venue management, security, logistics, and catering—ensuring a smooth and seamless event. With our expert coordination and attention to detail, we ensure that every aspect of your concert runs flawlessly, from the first note to the final encore. Let us make your next concert a spectacular success, with top-tier production and dedicated support every step of the way.</span>
               </div>
-            );
-          })}
+         
         </div>
       </div>
     </>

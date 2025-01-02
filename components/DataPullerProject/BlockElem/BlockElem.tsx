@@ -16,7 +16,7 @@ export default function BlockElem(props: Props) {
       >
         {props.title}
       </span>
-      <span className="text-AAsecondary font-semibold text-sm md:text-base">
+      <span className="text-[#f5d14e] font-semibold text-sm md:text-base">
         {props.value}
       </span>
     </div>

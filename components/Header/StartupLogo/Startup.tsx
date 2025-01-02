@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
+import Img from "../../smallComp/image/Img";
 const Startup = (props) => {
   let WidthBy2 = 0;
   let HeightBy2 = 0;
@@ -33,9 +34,9 @@ const Startup = (props) => {
           y:{ duration: 0.5, delay: 4.5 },
           scale: { duration: 0.5, delay: 4.5 },
         }}
-        className="relative  h-24 w-24 flex justify-center items-center"
+        className="relative  h-48 w-48 flex justify-center items-center"
       >
-        <motion.div
+        {/* <motion.div
           initial={{ scale: 0, x: 0 }}
           animate={{ scale: 1, rotate: 90, x: 38 }}
           transition={{
@@ -66,8 +67,8 @@ const Startup = (props) => {
             x: { delay: 1.5, duration: 0.5 },
           }}
           className="absolute h-2 w-12 bg-AAsecondary rounded "
-        ></motion.div>
-        <motion.div
+        ></motion.div> */}
+        {/* <motion.div
           initial={{ opacity: 0, scale: 0, x: 0, y: 0 }}
           animate={{ opacity: 1, scale: 1.05, rotate: -35, x: -18, y: -34 }}
           transition={{
@@ -102,14 +103,18 @@ const Startup = (props) => {
             x: { delay: 1.5, duration: 0.5 },
           }}
           className="absolute h-2 w-12 bg-AAsecondary rounded "
-        ></motion.div>
+        ></motion.div> */}
         <motion.span
           initial={{ scale: 0, y: -4 ,x:-1}}
           animate={{ scale: 1 }}
           transition={{ scale: { delay: 1.5, duration: 1.5 } }}
-          className="text-AAsecondary font-Text2 text-4xl"
+          className="text-[#f5d14e] font-Text2 text-4xl"
         >
-          A
+          <Img
+                src={"/Logo-2-removebg-preview.png"}
+                className={"object-contain rounded-lg"}
+                alt="My Image Not Found"
+              />
         </motion.span>
       </motion.div>
     </motion.div>

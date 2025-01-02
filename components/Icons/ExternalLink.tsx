@@ -11,7 +11,7 @@ const ExternalLink = (props: { router: NextRouter; url: string }) => {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="w-6 h-6 text-gray-300 hover:text-AAsecondary hover:cursor-pointer
+        className="w-6 h-6 text-gray-300 hover:text-[#f5d14e] hover:cursor-pointer
     transition ease-in-out delay-50 hover:-translate-y-1 
     hover:scale-110 duration-200"
       >

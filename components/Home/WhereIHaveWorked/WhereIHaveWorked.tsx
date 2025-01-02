@@ -15,36 +15,36 @@ export default function WhereIHaveWorked() {
   // ? INFORMATIONAL the default value of barRef's class should be at the beginning translate-y-[0px]
   const GetDescription = () => {
     switch (DescriptionJob) {
-      case "Vision":
+      case "Exhibition":
         return <EnsVision />;
-      case "YpredictAI":
+      case "Social Events":
         return <YpredictAI />;
-      case "TrouveTavoie":
+      case "Concerts":
         return <TrouveTavoie />;
-      case "FeverTokens":
+      case "Corporate Event Planning":
         return <FeverTokens />;
-      case "IdealFresh":
-        return <IdealFresh />;
-      case "Advanced Agro Management":
-        return <AdvancedAgroManagement />;
-      case "Fantasia":
-        return <Fantasia />;
-      case "SuperBerry":
-        return <SuperBerry />;
+      // case "IdealFresh":
+      //   return <IdealFresh />;
+      // case "Advanced Agro Management":
+      //   return <AdvancedAgroManagement />;
+      // case "Fantasia":
+      //   return <Fantasia />;
+      // case "SuperBerry":
+      //   return <SuperBerry />;
     }
   };
-  const [DescriptionJob, setDescriptionJob] = React.useState("Vision");
+  const [DescriptionJob, setDescriptionJob] = React.useState("Exhibition");
   return (
     <div data-aos="fade-up" className="flex flex-col items-center justify-center py-24 space-y-12 bg-AAprimary">
       {/* // ? Title "Where I've Worked" */}
       <section className="flex flex-row items-center">
         <div className="flex flex-row items-center">
-          <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 text-AAsecondary"} />
-          <span className="text-AAsecondary font-sans text-sm  sm:text-xl"> 02.</span>
+          <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 text-[#f5d14e]"} />
+          <span className="text-[#f5d14e] font-sans text-sm  sm:text-xl"> 02.</span>
         </div>
 
         <span className="text-gray-200 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
-          Where I&apos;ve Worked
+          Our Services
         </span>
         <div className="bg-gray-400 h-[0.2px] w-16 sm:w-44 md:w-80"></div>
       </section>
@@ -84,12 +84,12 @@ const CompaniesBar = props => {
           props.setDescriptionJob(props.DescriptionJob);
           setCompanyNameBackgroundColorGreen(props.CompanyNameBackgroundColorGreen);
         }}
-        className={`flex-none sm:text-sm text-xs text-center md:text-left  hover:text-AAsecondary
+        className={`flex-none sm:text-sm text-xs text-center md:text-left  hover:text-[#f5d14e]
              hover:bg-ResumeButtonHover rounded  font-mono  
              py-3 md:pl-6 md:px-4 md:w-44 w-32 duration-500
              ${
                companyNameBackgroundColorGreen[props.ButtonOrderOfcompanyNameBackgroundColorGreen]
-                 ? "bg-ResumeButtonHover text-AAsecondary"
+                 ? "bg-ResumeButtonHover text-[#f5d14e]"
                  : "text-gray-500"
              }`}
       >
@@ -122,41 +122,41 @@ const CompaniesBar = props => {
         <div className="flex flex-row md:flex-col">
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={0}
-            CompanyName="Vision"
+            CompanyName="Exhibition"
             BarPosition={-10}
             BarAvobePosition={1}
-            DescriptionJob="Vision"
+            DescriptionJob="Exhibition"
             CompanyNameBackgroundColorGreen={[true, false, false, false, false, false,false,false]}
             setDescriptionJob={props.setDescriptionJob}
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={1}
-            CompanyName="Ypredict.io"
+            CompanyName="Social Events"
             BarPosition={40}
             BarAvobePosition={129}
-            DescriptionJob="YpredictAI"
+            DescriptionJob="Social Events"
             CompanyNameBackgroundColorGreen={[false, true, false, false, false, false, false,false]}
             setDescriptionJob={props.setDescriptionJob}
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={2}
-            CompanyName="TrouveTavoie"
+            CompanyName="Concerts"
             BarPosition={83}
             BarAvobePosition={257}
-            DescriptionJob="TrouveTavoie"
+            DescriptionJob="Concerts"
             CompanyNameBackgroundColorGreen={[false, false, true, false, false, false,false,false]}
             setDescriptionJob={props.setDescriptionJob}
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={3}
-            CompanyName="FeverTokens"
+            CompanyName="Corporate Event Planning"
             BarPosition={126}
             BarAvobePosition={385}
-            DescriptionJob="FeverTokens"
+            DescriptionJob="Corporate Event Planning"
             CompanyNameBackgroundColorGreen={[false, false, false, true, false, false,false,false]}
             setDescriptionJob={props.setDescriptionJob}
           />
-          <CompanyButton
+          {/* <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={4}
             CompanyName="IdealFresh"
             BarPosition={170}
@@ -191,7 +191,7 @@ const CompaniesBar = props => {
             DescriptionJob="Fantasia"
             CompanyNameBackgroundColorGreen={[false, false, false, false, false, false, false,true]}
             setDescriptionJob={props.setDescriptionJob}
-          />
+          /> */}
         </div>
         <div className="block md:hidden h-0.5 rounded bg-gray-500">
           <motion.div animate={{ x: barAbovePosition }} className="w-[128px] h-0.5 rounded bg-AAsecondary"></motion.div>

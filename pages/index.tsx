@@ -4,7 +4,7 @@ import MyName from "../components/Home/MyName/MyName";
 import { useContext, useEffect, useState, useRef } from "react";
 import SocialMediaArround from "../components/Home/SocialMediaArround/SocialMediaArround";
 import AboutMe from "../components/Home/AboutMe/AboutMe";
-import ThisCantBeReached from "../components/Home/ThisSiteCantBeReached/ThisCantBeReached";
+// import ThisCantBeReached from "../components/Home/ThisSiteCantBeReached/ThisCantBeReached";
 import WhereIHaveWorked from "../components/Home/WhereIHaveWorked/WhereIHaveWorked";
 import SomethingIveBuilt from "../components/Home/SomethingIveBuilt/SomethingIveBuilt";
 import GetInTouch from "../components/Home/GetInTouch/GetInTouch";
@@ -17,7 +17,7 @@ import ScreenSizeDetector from "../components/CustomComponents/ScreenSizeDetecto
 import Maintenance from "../components/Home/Maintenance/Maintenance";
 export default function Home() {
   const [ShowElement, setShowElement] = useState(false);
-  const [ShowThisCantBeReached, setShowThisCantBeReached] = useState(true);
+  // const [ShowThisCantBeReached, setShowThisCantBeReached] = useState(true);
   const [ShowMe, setShowMe] = useState(false);
   // context Variable to clearInterval
   const context = useContext(AppContext);
@@ -61,18 +61,18 @@ export default function Home() {
   }, [IsBlackListEmpty]); // Empty dependency array ensures that this effect runs once when the component mounts
 
   // this useEffect will be called when userData is set
-  useEffect(() => {
-    // this will only run if NEXT_PUBLIC_BLACKLIST_COUNTRIES is not empty
-    if (!IsBlackListEmpty) {
-      if (userData) {
-        // check if the user country is in the blackList
-        if (process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES.includes(userData.country)) {
-          // set isBlackListed to true
-          setIsBlackListed(true);
-        }
-      }
-    }
-  }, [IsBlackListEmpty, userData]);
+  // useEffect(() => {
+  //   // this will only run if NEXT_PUBLIC_BLACKLIST_COUNTRIES is not empty
+  //   if (!IsBlackListEmpty) {
+  //     if (userData) {
+  //       // check if the user country is in the blackList
+  //       if (process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES.includes(userData.country)) {
+  //         // set isBlackListed to true
+  //         setIsBlackListed(true);
+  //       }
+  //     }
+  //   }
+  // }, [IsBlackListEmpty, userData]);
 
   useEffect(() => {
     // remove the interval Cookie timer setter when
@@ -89,9 +89,9 @@ export default function Home() {
       setShowElement(true);
     }, 4500);
 
-    setTimeout(() => {
-      setShowThisCantBeReached(false);
-    }, 5400);
+    // setTimeout(() => {
+    //   setShowThisCantBeReached(false);
+    // }, 5400);
     // ? INFORMATIONAL next function will show the component after changing the state of ShowMe
     setTimeout(() => {
       setShowElement(false);
@@ -136,7 +136,7 @@ export default function Home() {
 
       {!isBlackListed ? (
         <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
-          {context.sharedState.finishedLoading ? <></> : ShowThisCantBeReached ? <ThisCantBeReached /> : <></>}
+          {/* {context.sharedState.finishedLoading ? <></> : ShowThisCantBeReached ? <ThisCantBeReached /> : <></>} */}
           {context.sharedState.finishedLoading ? <></> : ShowElement ? <Startup /> : <></>}
           <Header finishedLoading={context.sharedState.finishedLoading} sectionsRef={homeRef} />
           <MyName finishedLoading={context.sharedState.finishedLoading} />

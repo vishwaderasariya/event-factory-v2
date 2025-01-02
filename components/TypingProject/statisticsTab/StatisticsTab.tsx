@@ -54,7 +54,7 @@ export default function StatisticsTab({
         <div className="w-full flex justify-center">
           <span className="sm:text-xl text-sm text-gray-400 underline ">Statistics</span>
         </div>
-        <div className="w-full font-mono text-AAsecondary flex flex-row justify-between px-2">
+        <div className="w-full font-mono text-[#f5d14e] flex flex-row justify-between px-2">
           <div className="sm:text-base text-sm ">round {round.toString()} : </div>
           <div className="sm:text-base text-sm ">{finishedTime} sec</div>
         </div>
@@ -77,7 +77,7 @@ export default function StatisticsTab({
                     </th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-200 text-AAsecondary">
+                <tbody className="divide-y divide-gray-200 text-[#f5d14e]">
                   {statistics
                     .slice(0)
                     .reverse()
