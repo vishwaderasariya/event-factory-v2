@@ -46,7 +46,6 @@ const GalleryCarousel = () => {
             className="flex-shrink-0 w-1/3 p-2"
             style={{ minWidth: "calc(33.33% - 16px)" }} // Ensure consistent width
           >
-            minor change
             <img
               src={slide.src}
               alt={slide.alt}
