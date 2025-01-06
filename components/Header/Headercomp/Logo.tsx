@@ -9,8 +9,8 @@ export default function Logo(props: { finishedLoading: boolean }) {
         animate={{ y: 0, opacity: 1 }}
         transition={{
           type: "spring",
-          y: { delay: props.finishedLoading ? 0 : 8, duration: 0 },
-          opacity: { delay: props.finishedLoading ? 0 : 8, duration: 0 },
+          y: { delay: props.finishedLoading ? 0 : 3.5, duration: 0 },
+          opacity: { delay: props.finishedLoading ? 0 : 3.5, duration: 0 },
         }}
         className=" relative h-32 w-24"
       >
@@ -18,11 +18,11 @@ export default function Logo(props: { finishedLoading: boolean }) {
           initial={{ x: 1 }}
           className="absolute h-full w-full flex justify-center items-center text-lg font-Header text-[#f5d14e]"
         >
-             <Img
-                src={"/Logo-2-removebg-preview.png"}
-                className={"object-contain rounded-lg"}
-                alt="My Image Not Found"
-              />
+          <Img
+            src={"/Logo-2-removebg-preview.png"}
+            className={"object-contain rounded-lg"}
+            alt="My Image Not Found"
+          />
         </motion.span>
 
         {/* <motion.div animate={{ rotate: -30, y: 5 }} className="h-1 w-6 rounded bg-AAsecondary"></motion.div>

@@ -1,6 +1,6 @@
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import { Link } from "react-scroll";
-const MobileMenu = props => {
+const MobileMenu = (props) => {
   const closeMenu = () => {
     props.setRotate(!props.rotate);
     props.setShowElement(!props.ShowElement);
@@ -47,12 +47,14 @@ const MobileMenu = props => {
             onClick={() => closeMenu()}
             className="flex flex-col text-center space-y-2"
           >
-            <span className="text-[#f5d14e] text-xs font-mono hover:cursor-pointer">02.</span>
+            <span className="text-[#f5d14e] text-xs font-mono hover:cursor-pointer">
+              02.
+            </span>
             <span
               className="text-white font-Text2 text-sm sm:text-base
              hover:text-[#f5d14e] hover:cursor-pointer duration-300"
             >
-              Experience
+              Services
             </span>
           </Link>
           <Link
@@ -89,14 +91,6 @@ const MobileMenu = props => {
               Contact
             </span>
           </Link>
-          <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
-            <button
-              className="rounded border font-Text2  border-[#f5d14e]
-           hover:bg-ResumeButtonHover py-2 sm:py-4 px-5 sm:px-10 text-xs text-[#f5d14e]"
-            >
-              Resume
-            </button>
-          </a>
         </div>
       </motion.div>
     </>

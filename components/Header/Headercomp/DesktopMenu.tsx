@@ -17,13 +17,21 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         transition={{
           type: "spring",
           duration: props.finishedLoading ? 0 : 1.2,
-          delay: props.finishedLoading ? 0 : 9.4,
+          delay: props.finishedLoading ? 0 : 4.9,
         }}
         className=" text-[#f5d14e]"
-       
       >
-        <ReactScrollLink to="aboutSection" spy={true} smooth={true} offset={-100} duration={200}>
-          &gt; 01. <span className="text-white hover:cursor-pointer hover:text-[#f5d14e] duration-300">About</span>
+        <ReactScrollLink
+          to="aboutSection"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          &gt; 01.{" "}
+          <span className="text-white hover:cursor-pointer hover:text-[#f5d14e] duration-300">
+            About
+          </span>
         </ReactScrollLink>
       </motion.div>
       <motion.div
@@ -38,14 +46,21 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         transition={{
           type: "spring",
           duration: props.finishedLoading ? 0 : 1.2,
-          delay: props.finishedLoading ? 0 : 9.7,
+          delay: props.finishedLoading ? 0 : 5.2,
         }}
         className="text-[#f5d14e]"
-       
       >
-        <ReactScrollLink to="WhereIhaveWorkedSection" spy={true} smooth={true} offset={-300} duration={200}>
+        <ReactScrollLink
+          to="WhereIhaveWorkedSection"
+          spy={true}
+          smooth={true}
+          offset={-300}
+          duration={200}
+        >
           &gt; 02.{" "}
-          <span className="text-white  hover:cursor-pointer hover:text-[#f5d14e] duration-300">Experience</span>
+          <span className="text-white  hover:cursor-pointer hover:text-[#f5d14e] duration-300">
+            Services
+          </span>
         </ReactScrollLink>
       </motion.div>
       <motion.div
@@ -60,15 +75,22 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         transition={{
           type: "spring",
           duration: props.finishedLoading ? 0 : 1.2,
-          delay: props.finishedLoading ? 0 : 9.8,
+          delay: props.finishedLoading ? 0 : 5.3,
         }}
         className="text-[#f5d14e]"
       >
-        <ReactScrollLink to="SomethingIveBuiltSection" spy={true} smooth={true} offset={-100} duration={200}>
-        &gt; 03. <span className="text-white  hover:cursor-pointer hover:text-[#f5d14e] duration-300">Work</span>
-
+        <ReactScrollLink
+          to="SomethingIveBuiltSection"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          &gt; 03.{" "}
+          <span className="text-white  hover:cursor-pointer hover:text-[#f5d14e] duration-300">
+            Work
+          </span>
         </ReactScrollLink>
-        
       </motion.div>
       <motion.span
         initial={{
@@ -82,36 +104,23 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         transition={{
           type: "spring",
           duration: props.finishedLoading ? 0 : 1.2,
-          delay: props.finishedLoading ? 0 : 10,
+          delay: props.finishedLoading ? 0 : 5.5,
         }}
         className="text-[#f5d14e]"
       >
-         <ReactScrollLink to="GetInTouchSection" spy={true} smooth={true} offset={-100} duration={200}>
-         &gt; 04. <span className="text-white  hover:cursor-pointer hover:text-[#f5d14e] duration-300">Contact</span>
+        <ReactScrollLink
+          to="GetInTouchSection"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          &gt; 04.{" "}
+          <span className="text-white  hover:cursor-pointer hover:text-[#f5d14e] duration-300">
+            Contact
+          </span>
         </ReactScrollLink>
       </motion.span>
-      <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
-      <motion.button
-        initial={{
-          y: -40,
-          opacity: 0,
-        }}
-        animate={{
-          y: 0,
-          opacity: 1,
-        }}
-        transition={{
-          type: "spring",
-          duration: props.finishedLoading ? 0 : 1.2,
-          delay: props.finishedLoading ? 0 : 10.2,
-        }}
-        // onClick={()=>{router.push("/resume.pdf")}}
-        className="text-[#f5d14e] border border-spacing-2 py-2 px-3 rounded-sm border-[#f5d14e] hover:bg-ResumeButtonHover"
-      >
-        Resume
-      </motion.button>
-      </a>
-      
     </div>
   );
 }
