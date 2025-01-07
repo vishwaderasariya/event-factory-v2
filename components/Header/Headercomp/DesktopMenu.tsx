@@ -109,13 +109,42 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         className="text-[#f5d14e]"
       >
         <ReactScrollLink
-          to="GetInTouchSection"
+          to="gallerySection"
           spy={true}
           smooth={true}
           offset={-100}
           duration={200}
         >
           &gt; 04.{" "}
+          <span className="text-white  hover:cursor-pointer hover:text-[#f5d14e] duration-300">
+            Gallery
+          </span>
+        </ReactScrollLink>
+      </motion.span>
+      <motion.span
+        initial={{
+          y: -40,
+          opacity: 0,
+        }}
+        animate={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{
+          type: "spring",
+          duration: props.finishedLoading ? 0 : 1.2,
+          delay: props.finishedLoading ? 0 : 5.5,
+        }}
+        className="text-[#f5d14e]"
+      >
+        <ReactScrollLink
+          to="GetInTouchSection"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          &gt; 05.{" "}
           <span className="text-white  hover:cursor-pointer hover:text-[#f5d14e] duration-300">
             Contact
           </span>

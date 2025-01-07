@@ -75,7 +75,7 @@ const MobileMenu = (props) => {
             </span>
           </Link>
           <Link
-            to="GetInTouchSection"
+            to="gallerySection"
             spy={true}
             smooth={true}
             offset={100}
@@ -84,6 +84,23 @@ const MobileMenu = (props) => {
             className="flex flex-col text-center space-y-2"
           >
             <span className="text-[#f5d14e] text-xs font-mono">04.</span>
+            <span
+              className="text-white font-Text2 text-sm sm:text-base
+             hover:text-[#f5d14e] hover:cursor-pointer duration-300"
+            >
+              Gallery
+            </span>
+          </Link>
+          <Link
+            to="GetInTouchSection"
+            spy={true}
+            smooth={true}
+            offset={100}
+            duration={200}
+            onClick={() => closeMenu()}
+            className="flex flex-col text-center space-y-2"
+          >
+            <span className="text-[#f5d14e] text-xs font-mono">05.</span>
             <span
               className="text-white font-Text2 text-sm sm:text-base
              hover:text-[#f5d14e] hover:cursor-pointer duration-300"

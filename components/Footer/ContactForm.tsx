@@ -22,9 +22,8 @@ export default function ContactForm() {
       className="mt-6 max-w-6xl max-lg:max-w-3xl mx-auto bg-AAtertiary rounded-lg"
       data-aos="fade-up"
     >
-      <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-[sans-serif]">
+      <div className="grid lg:grid-cols-2 justify-center items-center gap-14 sm:p-8 p-4 font-[sans-serif]">
         <div>
-          <h1 className="text-4xl font-bold text-white">Get in Touch</h1>
           <p className="text-sm text-gray-300 mt-4 leading-relaxed">
             {" "}
             Reach to us to find out best ways to make your events memorable.
