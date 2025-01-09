@@ -130,7 +130,6 @@ export default function Home() {
     type: "website",
   };
   const isProd = process.env.NODE_ENV === "production";
-
   return (
     <>
       <Head>
@@ -161,7 +160,6 @@ export default function Home() {
           ) : (
             <></>
           )}
-          docs
           <Header
             finishedLoading={context.sharedState.finishedLoading}
             sectionsRef={homeRef}
@@ -176,9 +174,8 @@ export default function Home() {
             <></>
           )}
           {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>}
-          {context.sharedState.finishedLoading ? <SomethingIveBuilt /> : <></>}
+          {/* {context.sharedState.finishedLoading ? <SomethingIveBuilt /> : <></>} */}
           {context.sharedState.finishedLoading ? <GalleryCarousel /> : <></>}
-          {context.sharedState.finishedLoading ? <GetInTouch /> : <></>}
           {context.sharedState.finishedLoading ? <ContactForm /> : <></>}
           {context.sharedState.finishedLoading ? (
             <Footer

@@ -4,10 +4,14 @@ import ArrowIcon from "../../../components/Icons/ArrowIcon";
 export default function AboutMe(props) {
   const technologies = [
     ["Creativity", "Reliability", "Quality"],
-    ["Professionalism", "Client-Centric" ],
+    ["Professionalism", "Client-Centric"],
   ];
   return (
-    <div id="aboutSection" data-aos="fade-up" className="snap-start flex flex-col  items-center py-20 bg-AAprimary">
+    <div
+      id="aboutSection"
+      data-aos="fade-up"
+      className="snap-start flex flex-col  items-center py-20 bg-AAprimary"
+    >
       {/* // ? 0.1 About Me */}
       <div
         className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] 
@@ -15,8 +19,15 @@ export default function AboutMe(props) {
       >
         <div className="flex flex-row items-center ">
           <div className="flex flex-row  items-center mr-4">
-            <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-[#f5d14e]"} />
-            <span className="text-[#f5d14e] font-Header text-sm  sm:text-xl"> 01.</span>
+            <ArrowIcon
+              className={
+                "flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-[#f5d14e]"
+              }
+            />
+            <span className="text-[#f5d14e] font-Header text-sm  sm:text-xl">
+              {" "}
+              01.
+            </span>
             <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
               About Us
             </span>
@@ -29,13 +40,28 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header text-justify">
               <span className="text-gray-400 ">
-              At Event Factory LLC, we turn ideas into unforgettable experiences. As a <span className="text-[#f5d14e]">full-service event production company</span>, we specialize in creating captivating social, corporate, and entertainment events tailored to our clients' unique needs. From <span className="text-[#f5d14e]">sound and lighting to staging</span> and décor, our dedicated team works with passion and precision to bring your vision to life, ensuring every detail aligns with your goals and expectations.
-
+                At Event Factory LLC, we turn ideas into unforgettable
+                experiences. As a{" "}
+                <span className="text-[#f5d14e]">
+                  full-service event production company
+                </span>
+                , we specialize in creating captivating social, corporate, and
+                entertainment events tailored to our clients' unique needs. From{" "}
+                <span className="text-[#f5d14e]">
+                  sound and lighting to staging
+                </span>{" "}
+                and décor, our dedicated team works with passion and precision
+                to bring your vision to life, ensuring every detail aligns with
+                your goals and expectations.
               </span>
             </div>
             <div className="font-Header text-justify">
               <span className="text-gray-400 ">
-              Our mission is to deliver exceptional event solutions that captivate audiences, foster connections, and exceed expectations. We believe that every event has the power to inspire and create lasting memories, and we are committed to making that happen for every client we serve
+                Our mission is to deliver exceptional event solutions that
+                captivate audiences, foster connections, and exceed
+                expectations. We believe that every event has the power to
+                inspire and create lasting memories, and we are committed to
+                making that happen for every client we serve
               </span>
             </div>
             <div className="font-Header tracking-wide flex flex-row space-x-16  justify-center lg:justify-start">
@@ -43,9 +69,14 @@ export default function AboutMe(props) {
                 <div className="flex flex-col space-y-4 sm:text-base text-sm">
                   {technologies[0].map((tech, index) => {
                     return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
+                      <div
+                        key={index}
+                        className="flex flex-row items-center space-x-2"
+                      >
                         <ArrowIcon className={"h-3 w-3 text-[#f5d14e]"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
+                        <span className="text-gray-400 sm:text-sm text-xs">
+                          {tech}
+                        </span>
                       </div>
                     );
                   })}
@@ -55,20 +86,25 @@ export default function AboutMe(props) {
                 <div className="flex flex-col space-y-4 sm:text-base text-sm">
                   {technologies[1].map((tech, index) => {
                     return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
+                      <div
+                        key={index}
+                        className="flex flex-row items-center space-x-2"
+                      >
                         <ArrowIcon className={"h-3 w-3 text-[#f5d14e]"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
+                        <span className="text-gray-400 sm:text-sm text-xs">
+                          {tech}
+                        </span>
                       </div>
                     );
                   })}
                 </div>
               </div>
             </div>
-              <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
-                <button className="bg-AAprimary text-[#f5d14e] border rounded px-4 sm:px-8 py-3 sm:py-4 border-[#f5d14e] mt-2">
-                Our Projects 
-                </button>
-              </a>
+            {/* <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
+              <button className="bg-AAprimary text-[#f5d14e] border rounded px-4 sm:px-8 py-3 sm:py-4 border-[#f5d14e] mt-2">
+                Our Projects
+              </button>
+            </a> */}
           </div>
           {/* // ? Image in Desktop and Tablet */}
           <div className="group relative lg:w-96 lg:h-96 md:w-72 md:h-72 md:block hidden ">
@@ -86,14 +122,13 @@ export default function AboutMe(props) {
                 alt="My Image Not Found"
               />
             </div>
-          
           </div>
           {/* // ?Image in Mobile */}
           <div className=" relative w-full h-48 md:hidden  flex justify-center items-center">
             <div className="absolute w-48 h-full  rounded  translate-x-5 translate-y-5 border-2 border-[#f5d14e]"></div>
             <div className="absolute w-48 h-full rounded overflow-hidden">
               <Img
-                src={"/img/Portfolio-portrait-3.jpg"}
+                src={"/Logo-2-removebg-preview.png"}
                 className={"object-contain rounded-lg"}
                 alt="My Image Not Found"
               />

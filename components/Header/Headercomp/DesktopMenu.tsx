@@ -63,7 +63,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           </span>
         </ReactScrollLink>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         initial={{
           y: -40,
           opacity: 0,
@@ -91,7 +91,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
             Work
           </span>
         </ReactScrollLink>
-      </motion.div>
+      </motion.div> */}
       <motion.span
         initial={{
           y: -40,
@@ -115,7 +115,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           offset={-100}
           duration={200}
         >
-          &gt; 04.{" "}
+          &gt; 03.{" "}
           <span className="text-white  hover:cursor-pointer hover:text-[#f5d14e] duration-300">
             Gallery
           </span>
@@ -144,7 +144,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           offset={-100}
           duration={200}
         >
-          &gt; 05.{" "}
+          &gt; 04.{" "}
           <span className="text-white  hover:cursor-pointer hover:text-[#f5d14e] duration-300">
             Contact
           </span>

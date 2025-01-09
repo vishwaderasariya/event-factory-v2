@@ -42,7 +42,7 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
           <div className="flex flex-col justify-center items-center space-y-5">
             {/* Github Icon */}
             <IconClickableWithAnimation
-              Icon={GithubIcon}
+              Icon={InstagramIcon}
               href={
                 "https://www.instagram.com/eventfactoryllc/?igsh=cWs0eHdjdHp0aGNo&utm_source=qr"
               }

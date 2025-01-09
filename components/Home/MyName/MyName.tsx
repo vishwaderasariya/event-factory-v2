@@ -3,34 +3,15 @@ import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Img from "../../smallComp/image/Img";
+import { Link as ReactScrollLink } from "react-scroll";
+
 export default function MyName(props: { finishedLoading: boolean }) {
   const router = useRouter();
   return (
     <div
       className="h-full flex flex-col justify-center
-      px-8 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8 py-32 sm:py-52"
+      px-8 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8 py-36 sm:py-52"
     >
-      <motion.span
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{
-          opacity: {
-            delay: props.finishedLoading ? 0 : 5.9,
-            duration: props.finishedLoading ? 0 : 0.2,
-          },
-          y: {
-            delay: props.finishedLoading ? 0 : 5.9,
-            duration: props.finishedLoading ? 0 : 0.2,
-          },
-        }}
-        className="text-[#f5d14e] font-mono"
-      >
-        <Img
-          src="hero-section-1.jpeg"
-          alt="About picture"
-          className="opacity-80 absolute right-40 w-2/5 h-1/6 object-cover"
-        />
-      </motion.span>
       <motion.span
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -156,11 +137,17 @@ export default function MyName(props: { finishedLoading: boolean }) {
         }}
         className="mt-12"
       >
-        <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
+        <ReactScrollLink
+          to="WhereIhaveWorkedSection"
+          spy={true}
+          smooth={true}
+          offset={-300}
+          duration={200}
+        >
           <button className="bg-AAprimary text-[#f5d14e] border rounded px-4 sm:px-8 py-3 sm:py-4 border-[#f5d14e]">
             Checkout our services
           </button>
-        </a>
+        </ReactScrollLink>
       </motion.div>
     </div>
   );

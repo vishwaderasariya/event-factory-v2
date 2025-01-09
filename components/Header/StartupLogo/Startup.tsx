@@ -112,7 +112,7 @@ const Startup = (props) => {
         <motion.span
           initial={{ scale: 0, y: -4, x: -1 }}
           animate={{ scale: 1 }}
-          transition={{ scale: { delay: 1.5, duration: 1.5 } }}
+          transition={{ scale: { delay: 0, duration: 1.5 } }}
           className="text-[#f5d14e] font-Text2 text-4xl"
         >
           <Img
