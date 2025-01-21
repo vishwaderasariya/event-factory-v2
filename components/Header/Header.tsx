@@ -67,7 +67,6 @@ const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
     }, 5900);
   }, []);
 
-  console.log("rotate from header : ", rotate);
   //veify document for serverSide rendering
   if (typeof document !== "undefined") {
     rotate
