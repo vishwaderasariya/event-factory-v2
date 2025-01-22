@@ -20,7 +20,7 @@ export default function TypingStatistics(props: Props) {
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col items-center text-gray-400 hover:text-AAsecondary duration-300"
+          className="flex flex-col items-center text-gray-400 hover:text-[#f5d14e] duration-300"
         >
           <span className="sm:text-base text-xs">Windows : Ctrl + /</span>
           <span className="sm:text-base text-xs">Or</span>
@@ -42,7 +42,7 @@ export default function TypingStatistics(props: Props) {
           <div className="sm:h-8 sm:w-8 h-5 w-5 ">
             <RestartIcon />
           </div>
-          <span className="sm:text-lg text-sm font-mono text-gray-400 group-hover:text-AAsecondary duration-200 group-hover:translate-x-2">
+          <span className="sm:text-lg text-sm font-mono text-gray-400 group-hover:text-[#f5d14e] duration-200 group-hover:translate-x-2">
             Restart
           </span>
         </motion.div>

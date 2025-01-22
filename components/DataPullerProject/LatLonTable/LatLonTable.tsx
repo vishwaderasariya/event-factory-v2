@@ -18,11 +18,11 @@ const LatLongTableDesktop = location => {
       <tbody className="border-2  md:text-sm text-xs">
         <tr className=" border-2 ">
           <td className="border-2 py-1 px-8 ">Latitude :</td>
-          <td className="text-AAsecondary px-8">{location.location[0]}</td>
+          <td className="text-[#f5d14e] px-8">{location.location[0]}</td>
         </tr>
         <tr>
           <td className="border-2 py-1 px-8">Longitude :</td>
-          <td className="text-AAsecondary px-8">{location.location[1]}</td>
+          <td className="text-[#f5d14e] px-8">{location.location[1]}</td>
         </tr>
       </tbody>
     </table>
@@ -35,11 +35,11 @@ const LatLongTableMobile = location => {
       <tbody className="border-2  md:text-xl text-xs">
         <tr className=" border-2 ">
           <td className="border-2 py-1 px-8 ">Latitude :</td>
-          <td className="text-AAsecondary px-8">{location.location[0]}</td>
+          <td className="text-[#f5d14e] px-8">{location.location[0]}</td>
         </tr>
         <tr>
           <td className="border-2 py-1 px-8">Longitude :</td>
-          <td className="text-AAsecondary px-8">{location.location[1]}</td>
+          <td className="text-[#f5d14e] px-8">{location.location[1]}</td>
         </tr>
       </tbody>
     </table>

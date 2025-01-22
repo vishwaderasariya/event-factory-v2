@@ -14,7 +14,7 @@ export default function Timer(props:Props) {
         <div className="flex flex-col spacey-y-1 items-center">
           <div className="flex flex-row space-x-1">
             <div className="flex flex-col space-y-1 items-center">
-              <div className="sm:w-8 w-6 sm:h-10 h-8 border-[1.5px] border-AAsecondary rounded flex justify-center items-center">
+              <div className="sm:w-8 w-6 sm:h-10 h-8 border-[1.5px] border-[#f5d14e] rounded flex justify-center items-center">
                 <span
                   ref={props.minTens}
                   className="text-white font-mono sm:text-2xl text-sm"
@@ -24,7 +24,7 @@ export default function Timer(props:Props) {
               </div>
             </div>
             <div className="flex flex-col space-y-1 items-center">
-              <div className="sm:w-8 w-6 sm:h-10 h-8 border-[1.5px] border-AAsecondary rounded flex justify-center items-center">
+              <div className="sm:w-8 w-6 sm:h-10 h-8 border-[1.5px] border-[#f5d14e] rounded flex justify-center items-center">
                 <span
                   ref={props.minUnits}
                   className="text-white font-mono sm:text-2xl text-sm"
@@ -39,7 +39,7 @@ export default function Timer(props:Props) {
         <div className="flex flex-col spacey-y-1 items-center">
           <div className="flex flex-row space-x-1">
             <div className="flex flex-col space-y-1 items-center">
-              <div className="sm:w-8 w-6 sm:h-10 h-8 border-[1.5px] border-AAsecondary rounded flex justify-center items-center">
+              <div className="sm:w-8 w-6 sm:h-10 h-8 border-[1.5px] border-[#f5d14e] rounded flex justify-center items-center">
                 <span
                   ref={props.secTens}
                   className="text-white font-mono sm:text-2xl text-sm"
@@ -49,7 +49,7 @@ export default function Timer(props:Props) {
               </div>
             </div>
             <div className="flex flex-col space-y-1 items-center">
-              <div className="sm:w-8 w-6 sm:h-10 h-8 border-[1.5px] border-AAsecondary rounded flex justify-center items-center">
+              <div className="sm:w-8 w-6 sm:h-10 h-8 border-[1.5px] border-[#f5d14e] rounded flex justify-center items-center">
                 <span
                   ref={props.secUnits}
                   className="text-white font-mono sm:text-2xl text-sm"
