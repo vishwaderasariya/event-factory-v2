@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://my-website-ten-sage.vercel.app/" target="_blank">
+  <a href="https://event-factory-ten-sage.vercel.app/" target="_blank">
     <img src="https://raw.githubusercontent.com/DataDog/integrations-extras/master/vercel/images/logo-full-black.png" width="100" alt="Vercel Status" />
   </a>
 </p>
@@ -27,9 +27,6 @@ Please note that the design of the website is inspired from "brittanychiang.com"
 
 
 I'd like to highlight that the `This website can't be reached` trick featured on my portfolio is an `original idea` and not borrowed from any other source. It's intended as a playful element, reflecting my sense of humor. While I acknowledge that it might not be the most user-friendly approach, it's worth mentioning that my portfolio receives an average of 30-10 daily visitors. Through careful observation, I've calculated that the average reaction time is 2 seconds before users realize the playful nature of the message, at which point the content becomes accessible. It's a quirky touch meant to add a lighthearted element to the user experience.
-
-
-
 
 
 ---
@@ -78,7 +75,7 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [an
 1. Clone the repo CLI
 
    ```sh
-   git clone https://github.com/hktitof/my-website.git
+   git clone https://github.com/hktitof/event-factory.git
    ```
 
 2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
