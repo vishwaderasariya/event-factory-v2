@@ -82,7 +82,7 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
               rel="noreferrer"
             >
               <span className=" font-Header tracking-wider text-gray-400 hover:text-[#f5d14e] hover:cursor-pointer">
-                yash@eventfactoryllc.org
+              paul@eventfactoryllc.org
               </span>
             </a>
           </motion.div>
