@@ -2,6 +2,7 @@
   "name": "event-factory",
   "version": "1.0.1",
   "private": true,
+  "type": "commonjs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
