@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap");
 
-
-@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -41,4 +40,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #b1b0b0;
+  filter: brightness(0) invert(0.8);
 }

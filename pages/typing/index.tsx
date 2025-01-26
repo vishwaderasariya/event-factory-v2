@@ -165,7 +165,7 @@ export default function Home() {
                   className="absolute w-full z-10 bg-AAprimary opacity-90 rounded border-[0.5px] border-gray-700 flex justify-center items-center
                           hover:cursor-pointer"
                 >
-                  <span className="text-AAsecondary font-mono">Click here to continue..</span>
+                  <span className="text-[#f5d14e] font-mono">Click here to continue..</span>
                 </div>
               )}
               {/* Text : Wpm & Timer */}
