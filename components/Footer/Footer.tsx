@@ -22,7 +22,6 @@ const IconsData = [
 ];
 
 export default function Fotter(props: {
-  githubUrl: string;
   hideSocialsInDesktop: boolean;
 }) {
   return (

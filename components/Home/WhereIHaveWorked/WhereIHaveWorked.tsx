@@ -86,7 +86,6 @@ const CompaniesBar = (props) => {
       false,
     ]);
   const CompanyButton = (props) => {
-    console.log("props", props.CompanyName);
     return (
       <button
         onClick={() => {

@@ -179,7 +179,6 @@ export default function Home() {
           {context.sharedState.finishedLoading ? <ContactForm /> : <></>}
           {context.sharedState.finishedLoading ? (
             <Footer
-              githubUrl={"https://github.com/hktitof/my-website"}
               hideSocialsInDesktop={true}
             />
           ) : (
