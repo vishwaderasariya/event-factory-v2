@@ -46,7 +46,7 @@ export default function AboutMe(props) {
                   full-service event production company
                 </span>
                 , we specialize in creating captivating social, corporate, and
-                entertainment events tailored to our clients' unique needs. From{" "}
+                entertainment events tailored to our clients &apos; unique needs. From{" "}
                 <span className="text-[#f5d14e]">
                   sound and lighting to staging
                 </span>{" "}
