@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import AppContext from "../components/AppContextFolder/AppContext";
+import AppInfo from '../package.json';
 import { useRef, useState, useEffect } from "react";
 // import NEXT_PUBLIC_GA_TRACKING_ID form .env
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
@@ -16,6 +17,7 @@ import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  console.log('APP_VERSION ', AppInfo?.version);
 
   useEffect(() => {
     // Load Google Analytics script
