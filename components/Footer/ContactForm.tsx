@@ -1,5 +1,3 @@
-"use client";
-
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../../firebase";
 import ArrowIcon from "../Icons/ArrowIcon";
