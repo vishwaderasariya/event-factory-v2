@@ -8,123 +8,123 @@ const GalleryCarousel = () => {
     {
       src: "/event-images/salim-suleman-4.jpg",
       alt: "Image 4",
-      name: "Salim Suleman tech Production"
+      name: "Salim Suleman tech Production",
     },
     {
       src: "/event-images/salim-suleman-5.jpg",
       alt: "Image 5",
-      name: "Salim Suleman tech Production"
+      name: "Salim Suleman tech Production",
     },
     {
       src: "/event-images/salim-suleman-6.jpg",
       alt: "Image 6",
-      name: "Salim Suleman tech Production"
+      name: "Salim Suleman tech Production",
     },
     {
       src: "/event-images/salim-suleman-7.jpg",
       alt: "Image 7",
-      name: "Salim Suleman tech Production"
+      name: "Salim Suleman tech Production",
     },
     {
       src: "/event-images/salim-suleman-3.jpg",
       alt: "Image 3",
-      name: "Salim Suleman tech Production"
+      name: "Salim Suleman tech Production",
     },
     {
       src: "/event-images/salim-suleman-9.jpg",
       alt: "Image 9",
-      name: "Salim Suleman tech Production"
+      name: "Salim Suleman tech Production",
     },
     {
       src: "/event-images/salim-suleman-8.jpg",
       alt: "Image 10",
-      name: "Salim Suleman tech Production"
+      name: "Salim Suleman tech Production",
     },
     {
       src: "/event-images/digico-quantum-console.jpg",
       alt: "Image 11",
-      name: "Digico Quantum Console"
+      name: "Digico Quantum Console",
     },
     {
       src: "/event-images/aaditya-gadhvi-gotilo-tour-2.jpg",
       alt: "Image 12",
-      name: "Aaditya Gadhvi Gotilo Tour"
+      name: "Aaditya Gadhvi Gotilo Tour",
     },
 
     {
       src: "/event-images/aaditya-gadhvi-gotilo-tour-3.jpg",
       alt: "Image 13",
-      name: "Aaditya Gadhvi Gotilo Tour"
+      name: "Aaditya Gadhvi Gotilo Tour",
     },
     {
       src: "/event-images/aaditya-gadhvi-gotilo-tour.jpg",
       alt: "Image 14",
-      name: "Aaditya Gadhvi Gotilo Tour"
+      name: "Aaditya Gadhvi Gotilo Tour",
     },
     {
       src: "/event-images/backline-setup-2.jpg",
       alt: "Image 15",
-      name: "Backline Setup"
+      name: "Backline Setup",
     },
     {
       src: "/event-images/backline-setup.jpg",
       alt: "Image 17",
-      name: "Backline Setup"
+      name: "Backline Setup",
     },
     {
       src: "/event-images/hanging-led-setup.jpg",
       alt: "Image 18",
-      name: "Hanging LED setup"
+      name: "Hanging LED setup",
     },
     {
       src: "/event-images/sagar-bhatia-tech-production.jpg",
       alt: "Image 19",
-      name: "Sagar Bhatia Tech Production"
+      name: "Sagar Bhatia Tech Production",
     },
     {
       src: "/event-images/10x10-corporate-exhibition-booth.jpeg",
       alt: "Image 21",
-      name : "10x10 Corporate Exhibition Booth"
+      name: "10x10 Corporate Exhibition Booth",
     },
     {
       src: "/event-images/10x10-LED-booth-setup.jpeg",
       alt: "Image 22",
-      name : "10x10 LED Booth Setup"
+      name: "10x10 LED Booth Setup",
     },
     {
       src: "/event-images/10x20-corporate-booth-setup.jpeg",
       alt: "Image 23",
-      name: "10x20 Corporate Booth Setup"
+      name: "10x20 Corporate Booth Setup",
     },
     {
       src: "/event-images/finished-booth-setup.jpeg",
       alt: "Image 24",
-      name: "Finished Booth Setup"
+      name: "Finished Booth Setup",
     },
     {
       src: "/event-images/booth-making.jpeg",
       alt: "Image 25",
-      name : "Booth Making"
+      name: "Booth Making",
     },
     {
       src: "/event-images/booth-setup.jpeg",
       alt: "Image 26",
-      name : "Booth Setup"
+      name: "Booth Setup",
     },
     {
       src: "/event-images/sukhwinder-singh-tech-production.jpeg",
       alt: "Image 27",
-      name : "Sukhwinder Singh Tech Production"
+      name: "Sukhwinder Singh Tech Production",
     },
   ];
 
-  const imagesSecondRow = [ ];
+  const imagesSecondRow = [];
   // Duplicate slides for seamless scrolling
   const duplicatedSlides = [...images, ...images];
   const duplicatedSlides2 = [...imagesSecondRow, ...imagesSecondRow];
 
   useEffect(() => {
-    if (containerRef.current ) {
+    if (containerRef.current) {
       const container = containerRef.current;
       // const containerSecondRow = containerRefSecondRow.current;
 
@@ -147,13 +147,27 @@ const GalleryCarousel = () => {
       //   iterations: Infinity,
       //   easing: "linear",
       // });
-
+      animationRef.current = animation;
       return () => {
         animation.cancel();
         // animationSecondRow.cancel();
       }; // Cleanup on unmount
     }
   }, []);
+
+  const animationRef = useRef<Animation | null>(null); // Store the animation object
+
+  const pauseCarausel = () => {
+    if (animationRef.current) {
+      animationRef.current.pause(); // Pause the animation
+    }
+  };
+
+  const resumeCarausel = () => {
+    if (animationRef.current) {
+      animationRef.current.play(); // Resume the animation
+    }
+  };
 
   return (
     <div
@@ -191,15 +205,17 @@ const GalleryCarousel = () => {
               key={index}
               className="relative flex-shrink-0 w-1/3 p-2"
               style={{ minWidth: "100%" }} // Ensure consistent width
+              onMouseEnter={pauseCarausel}
+              onMouseLeave={resumeCarausel}
             >
               <img
                 src={slide.src}
                 alt={slide.alt}
                 className="w-full h-[130px] md:h-[400px] rounded-lg object-cover"
               />
-        <span className="absolute bottom-16 left-10 text-gray-200 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
-          {slide.name}
-        </span>
+              <span className="absolute bottom-16 left-10 text-gray-200 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
+                {slide.name}
+              </span>
             </div>
           ))}
         </div>
