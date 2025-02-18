@@ -72,12 +72,6 @@ export default function ContactForm() {
                   <div className="flex flex-col md:flex-row">
                     {" "}
                     <a
-                      href="mailto:yash@eventfactoryllc.org"
-                      className="text-white text-sm ml-4"
-                    >
-                      yash@eventfactoryllc.org
-                    </a>
-                    <a
                       href="mailto:paul@eventfactoryllc.org"
                       className="text-white text-sm ml-4"
                     >
