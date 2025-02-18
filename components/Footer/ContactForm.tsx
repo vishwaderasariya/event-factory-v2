@@ -102,7 +102,7 @@ export default function ContactForm() {
                     href="javascript:void(0)"
                     className="text-white text-sm ml-4"
                   >
-                    +1(332)265-6876
+                   +1 (203)-832-4442
                   </a>
                 </li>
                 <li className="flex items-center">
