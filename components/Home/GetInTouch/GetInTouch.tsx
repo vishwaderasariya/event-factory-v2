@@ -44,7 +44,7 @@ export default function GetInTouch() {
             className="font-mono text-sm text-[#f5d14e] border-[#f5d14e] 
                             px-8 py-4 border-[1.5px] rounded "
           >
-            yash@eventfactoryllc.org
+            paul@eventfactoryllc.org
           </button>
         ) : (
           <a
